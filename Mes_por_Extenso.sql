@@ -1,0 +1,9 @@
+	• Usado na solução\fórmula visual do Serasa:
+	
+
+TO_CHAR(TO_DATE( SUBSTR(ZMDZSERASA_HEADER.DATA,5,2) ,'MM'),'MON'  )
+
+Ex:
+
+SUBSTR(ZMDZSERASA_HEADER.DATA,7,2)||'/'||							TO_CHAR(TO_DATE( SUBSTR(ZMDZSERASA_HEADER.DATA,5,2) ,'MM'),'MON'  )  ||'/'||
+	SUBSTR(ZMDZSERASA_HEADER.DATA,1,4)
